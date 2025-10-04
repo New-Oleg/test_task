@@ -1,4 +1,4 @@
-<H1>Скрипты</H1>
+<img width="905" height="407" alt="image" src="https://github.com/user-attachments/assets/2d6b49d5-a265-47d6-b974-d54caffdf601" /><H1>Скрипты</H1>
 
 <H2>MoveController</H2>
 вешаеться на префабах домов, отвечает за выбор места для рамещения дома, реализует перемещение как с помощу клавиаттуры так и с помощу мыши (при помощи новой системы ввода). Пспользует класс TileAreaChecker для проверки на то занято ли место куда игрок патаеться поставить дом. 
@@ -15,3 +15,24 @@ TileAreaChecker - реализует проверку клеток под дом
 
 Управляет UI, подсвечивает понель под выбраный режи (Строительство или удаление), выдвигает\задвигает понельку с выбором дома при помощи плагина DoTween.
 
+<H1>Скрины</H1>
+
+после нажатия на кнопку "Разместить" выдвинулась панель с выбором дома, а панель с кнопками поменяла цвет на зеленый
+<br/>
+<img width="907" height="626" alt="image" src="https://github.com/user-attachments/assets/07b0e164-e49d-490f-90b2-d3bf123a1899" />
+<br/>
+при наведении дома, который игрок выбрал для строительства, на уже построены дом
+<br/>
+<img width="914" height="620" alt="image" src="https://github.com/user-attachments/assets/50236697-d07f-492e-b6ff-659b969ac960" />
+<br/>
+дам выделеный зеленым еще не постороен
+<br/>
+<img width="905" height="407" alt="image" src="https://github.com/user-attachments/assets/5a26e7c5-e75d-4726-b1c8-1b8512aaf341" />
+<br/>
+после нажатия на лкм, он принял свою обычную форму
+<br/>
+<img width="899" height="517" alt="image" src="https://github.com/user-attachments/assets/672b3a62-347a-4f75-9ee0-08c4662885e5" />
+<br/>
+после нажатия на кнопку "Удалить", панель с кнопками поменяла цвет на красный 
+<br/>
+<img width="899" height="517" alt="image" src="https://github.com/user-attachments/assets/4726e0de-669e-430b-9abb-4c54c38383ba" />

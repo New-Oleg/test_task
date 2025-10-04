@@ -1,7 +1,7 @@
 using System;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -10,6 +10,11 @@ public class UIController : MonoBehaviour
 
     [SerializeField]
     private RectTransform SelectHousePanel;
+
+    [SerializeField]
+    private GameObject ButtonPanel;
+
+    private Image _buttonPanelImage;
 
     public float _movePercent = 0.3f;
     public float _duration = 0.5f;
@@ -22,6 +27,8 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
+        _buttonPanelImage = ButtonPanel.GetComponent<Image>();
+
         _hiddenPos = SelectHousePanel.anchoredPosition;
         float moveDistance = SelectHousePanel.rect.height * _movePercent;
         _shownPos = _hiddenPos + Vector2.up * moveDistance;
@@ -32,6 +39,8 @@ public class UIController : MonoBehaviour
         if (_onDelete) _onDelete = false;
 
         _isShown = !_isShown;
+
+        _buttonPanelImage.color = _buttonPanelImage.color == Color.green ? Color.black : Color.green;
 
         if (_currentTween != null && _currentTween.IsActive()) _currentTween.Kill();
 
@@ -53,6 +62,9 @@ public class UIController : MonoBehaviour
     {
         if (_isShown == true) OnChuseCreateMode();
         _onDelete = !_onDelete;
+
+        _buttonPanelImage.color = _buttonPanelImage.color == Color.red ? Color.black : Color.red;
+
     }
 
 
@@ -72,6 +84,7 @@ public class UIController : MonoBehaviour
                 OnSelectDestroyObject.Invoke(col.transform.position);
                 Destroy(col.gameObject);
                 _onDelete = false;
+                _buttonPanelImage.color =  Color.black;
             }
 
         }

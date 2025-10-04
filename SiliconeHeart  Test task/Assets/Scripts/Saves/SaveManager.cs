@@ -28,44 +28,33 @@ public class SaveManager : MonoBehaviour
 
         positions = new List<Vector3>();
 
-        try
-        {
-            Load();
-        }
-        catch {
-        
-        }
+        Load();
     }
 
     public void DeleteData(Vector3 position)
     {
-
         int index = positions.IndexOf(position);
-        if(index == positions.Count - 1)
-        {
-            _saveFile.DeleteData(index.ToString());
-            _saveFile.DeleteData("prefIndex" + index);
-            _saveFile.AddOrUpdateData(saveKey, positions.Count);
-            _saveFile.Save();
-            return;
-
-        }
 
         positions.RemoveAt(index);
 
-        for(int i = index ; i <= positions.Count - 1; i++)
+        for (int i = index; i < positions.Count; i++)
         {
             _saveFile.AddOrUpdateData(i.ToString(), positions[i]);
-            _saveFile.AddOrUpdateData("prefIndex" + i, _saveFile.GetData<int>("prefIndex" + (i + 1)));
-            
+
+            // Берём prefIndex следующего элемента, если он есть
+            int nextPrefIndex = _saveFile.GetData<int>("prefIndex" + (i + 1)); // подстраховка
+
+            _saveFile.AddOrUpdateData("prefIndex" + i, nextPrefIndex);
         }
 
-        _saveFile.DeleteData((positions.Count+ 1).ToString());
-        _saveFile.DeleteData("prefIndex" + (positions.Count + 1));
+        _saveFile.DeleteData(positions.Count.ToString());
+        _saveFile.DeleteData("prefIndex" + positions.Count);
 
         _saveFile.AddOrUpdateData(saveKey, positions.Count);
 
         _saveFile.Save();
+
+        Debug.Log("After delete: " + positions.Count);
     }
 
     private void Save(Vector3 position, int prefIndex)
@@ -91,5 +80,11 @@ public class SaveManager : MonoBehaviour
 
             positions.Add(position);
         }
+    }
+
+    private void OnDestroy()
+    {
+        if(positions.Count == 0)
+            _saveFile.DeleteFile();
     }
 }

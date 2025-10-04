@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f50d54988e7ee664799fb688d0ab8430
+guid: 11e59aabf668fb947b5073d370c3337e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2718778361177353105
-    second: BlackTail_0
+      213: -8882018789552535208
+    second: House3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlackTail_0
+      name: House3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19baef8c38a0bb520800000000000000
-      internalID: 2718778361177353105
+      spriteID: 859406848fabcb480800000000000000
+      internalID: -8882018789552535208
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BlackTail_0: 2718778361177353105
+      House3_0: -8882018789552535208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bfe92f62cd7222c4f9b77b54047560e8
+guid: 6a9e07d353860bb4c96ebda67baef044
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3842807641667341289
-    second: WhileTail_0
+      213: 3786422932411902546
+    second: Grass2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhileTail_0
+      name: Grass2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 714f24a5fca9baac0800000000000000
-      internalID: -3842807641667341289
+      spriteID: 25aedcf78931c8430800000000000000
+      internalID: 3786422932411902546
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WhileTail_0: -3842807641667341289
+      Grass2_0: 3786422932411902546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

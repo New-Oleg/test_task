@@ -5,7 +5,7 @@
     "value": {
       "$type": "System.Single[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
       "$values": [
-        -5.5,
+        1.5,
         1.5,
         -1.0
       ]
@@ -14,17 +14,17 @@
   },
   "prefIndex0": {
     "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "value": 2,
+    "value": 1,
     "id": "prefIndex0"
   },
   "world_save": {
     "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "value": 3,
+    "value": 2,
     "id": "world_save"
   },
   "prefIndex1": {
     "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "value": 1,
+    "value": 2,
     "id": "prefIndex1"
   },
   "1": {
@@ -32,28 +32,11 @@
     "value": {
       "$type": "System.Single[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
       "$values": [
-        -1.5,
-        0.5,
+        -3.5,
+        1.5,
         -1.0
       ]
     },
     "id": "1"
-  },
-  "2": {
-    "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Single[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "value": {
-      "$type": "System.Single[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-      "$values": [
-        -1.5,
-        2.5,
-        -1.0
-      ]
-    },
-    "id": "2"
-  },
-  "prefIndex2": {
-    "$type": "Esper.ESave.SavableObjects.SavableData`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], ESave, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "value": 0,
-    "id": "prefIndex2"
   }
 }
